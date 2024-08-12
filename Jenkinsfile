@@ -13,7 +13,7 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 // Checkout code from GitHub
-                git branch: 'main', credentialsId: 'X-X-X-X_X___XX_XX__X_X_X_X_XX__X', url: 'https://github.com/Princepal1999/my-maven-project.git'
+                git branch: 'main', credentialsId: 'X-X-X-X_X___XX_XX__X_X_X_X_XX__X', url: 'https://github.com/itzshivpandit/my-maven-project.git'
                 script {
                     tag = sh(script: "git log -n 1 --pretty=format:'%H'", returnStdout: true).trim()
                     echo "Checked out commit: ${tag}"
