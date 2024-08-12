@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'  // Replace 'Maven' with the exact name of your Maven installation in Jenkins
+        maven 'Maven 3.8.7'  // Replace 'Maven' with the exact name of your Maven installation in Jenkins
     }
 
     environment {
-        MAVEN_HOME = tool 'Maven'  // Adjust if your Maven tool is named differently
+        MAVEN_HOME = tool 'Maven 3.8.7'  // Adjust if your Maven tool is named differently
     }
 
     stages {
