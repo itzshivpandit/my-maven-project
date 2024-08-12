@@ -1,13 +1,13 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven 3.8.7'  // Replace 'Maven' with the exact name of your Maven installation in Jenkins
-    }
+    //tools {
+      //  maven 'Maven 3.8.7'  // Replace 'Maven' with the exact name of your Maven installation in Jenkins
+    //}
 
-    environment {
-        MAVEN_HOME = tool 'Maven 3.8.7'  // Adjust if your Maven tool is named differently
-    }
+    //environment {
+      //  MAVEN_HOME = tool 'Maven 3.8.7'  // Adjust if your Maven tool is named differently
+    //}
 
     stages {
         stage('SCM Checkout') {
